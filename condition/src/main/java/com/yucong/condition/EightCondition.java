@@ -8,6 +8,7 @@ public class EightCondition implements Condition {
 
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
+        System.out.println(".............");
         return context.getEnvironment().getProperty("server.port").contains("8000");
     }
 }
